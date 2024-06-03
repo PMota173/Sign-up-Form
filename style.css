@@ -1,0 +1,13 @@
+@font-face {
+    font-family: "Norse Bold";
+    src: url("fonts/Norse-Bold.otf");
+}
+:root {
+    --links-color: #596D48;
+    --input-color: #E5E7EB;
+}
+
+h1 {
+    font-family: "Norse Bold";
+}
+
