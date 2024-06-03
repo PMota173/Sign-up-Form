@@ -2,12 +2,128 @@
     font-family: "Norse Bold";
     src: url("fonts/Norse-Bold.otf");
 }
+@font-face {
+    font-family: "Roboto Bold";
+    src: url(fonts/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: "Roboto light";
+    src: url(fonts/Roboto-Light.ttf);
+}
+@font-face {
+    font-family: "Roboto normal";
+    src: url(fonts/Roboto-Medium.ttf);
+}
 :root {
     --links-color: #596D48;
     --input-color: #E5E7EB;
+    --logo-color: #FFFFFF;
+    --background1and3: #F9FAFB;
+    --background2: #FFFFFF;
 }
 
-h1 {
-    font-family: "Norse Bold";
+* { 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+     box-sizing: border-box; 
+     font-family: "Roboto normal";
 }
+
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+}
+
+.backgound { 
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    background-position:center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 35vw;
+    height: 100vh;
+    color: var(--logo-color);
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.445);
+    width: 100%;
+    margin-top: 18.5vh;
+    height: 15vh;
+    gap: 5px;
+}
+
+.logo-image{
+    height: 10vh;
+}
+
+.logo-text {
+    font-family: "Norse Bold";
+    font-weight: lighter;
+    font-size: 10vh;
+    display: inline;
+}
+
+.credit a {
+    color: var(--logo-color);
+}
+
+
+
+.login-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--background1and3);
+}
+
+.text-section, .form-section, .options-section{
+    height: 33%;
+    width: 100%;
+    padding: 30px;
+}
+
+.text-section {
+    width: 750px;
+    padding-top: 120px;
+}
+
+.text-section h2 {
+    font-size: 2.5vh;
+    font-family: "Roboto normal";
+    font-weight: lighter;
+}
+
+.form-section {
+    background-color: var(--background2);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.options-section button {
+  background-color: var(--links-color);
+  border: 1px solid var(--links-color);
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-size: 24px;
+  outline: none;
+  outline: 0;
+  padding: 12px 45px;
+}
+
+
+
+
+
 
