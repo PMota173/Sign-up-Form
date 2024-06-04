@@ -56,7 +56,7 @@ body {
     align-items: center;
     background-color: rgba(0, 0, 0, 0.445);
     width: 100%;
-    margin-top: 18.5vh;
+    margin-top: 16vh;
     height: 15vh;
     gap: 5px;
 }
@@ -75,8 +75,9 @@ body {
 .credit a {
     color: var(--logo-color);
 }
-
-
+.credit {
+    font-size: 10px;
+}
 
 .login-section {
     display: flex;
@@ -94,8 +95,8 @@ body {
 }
 
 .text-section {
-    width: 750px;
-    padding-top: 120px;
+    padding-top: 4vw;
+    width: 60%;
 }
 
 .text-section h2 {
@@ -107,23 +108,95 @@ body {
 .form-section {
     background-color: var(--background2);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: fit-content;
+}
+
+.form-section h2 {
+    margin-bottom: 0px;
 }
 
 .options-section button {
   background-color: var(--links-color);
   border: 1px solid var(--links-color);
   border-radius: 10px;
-  box-sizing: border-box;
   color: #fff;
   cursor: pointer;
-  font-size: 24px;
+  font-size: 20px;
   outline: none;
   outline: 0;
   padding: 12px 45px;
 }
 
+.options-section a {
+    color: var(--links-color);
+}
 
+.form ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: space-between;
+    width: 65%;
+}
 
+.form li {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
 
+.form label {
+    font-size: 0.75rem;
+}
 
+.form input {
+    font-family: 'Roboto normal', sans-serif;
+    font-weight: lighter;
+    font-size: 1rem;
+    border: 2px solid var(--input-color);
+    border-radius: 4px;
+    padding: 7px;
+    margin: 3px 0 20px 0;
+}
 
+.form input:focus {
+    border: 2px solid var(--links-color);
+    outline: none;
+}
+
+#user-password:invalid, #confirm-password:invalid {
+    border: 2px solid red
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .text-section {
+        height: calc(33% + 20px);
+        width: 100%;
+    }
+    .backgound {
+        width: 100vw;
+        height: 40vh;
+        justify-content: space-evenly;
+    }
+    .logo {
+        margin-top: 0;
+    }
+    .form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .options-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
