@@ -171,7 +171,7 @@ body {
     border: 2px solid red
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 720px) {
     .container {
         flex-direction: column;
     }
@@ -188,11 +188,23 @@ body {
     .logo {
         margin-top: 0;
     }
-    .form{
+
+    .form-section {
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
     }
+
+    form {
+        display: flex;
+        justify-content: center;
+    }
+
+    .form li {
+        width: 100%;
+    }
+
     .options-section {
         display: flex;
         justify-content: center;
