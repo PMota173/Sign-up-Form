@@ -132,7 +132,6 @@ body {
 .options-section a {
     color: var(--links-color);
 }
-
 .form ul{
     list-style-type: none;
     display: flex;
@@ -162,12 +161,16 @@ body {
     margin: 3px 0 20px 0;
 }
 
+.form input::placeholder {
+    font-size: x-small;
+}
+
 .form input:focus {
     border: 2px solid var(--links-color);
     outline: none;
 }
 
-#user-password:invalid, #confirm-password:invalid {
+#user-password:invalid:focus, #confirm-password:invalid:focus {
     border: 2px solid red
 }
 
